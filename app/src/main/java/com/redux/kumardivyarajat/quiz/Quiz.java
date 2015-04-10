@@ -7,6 +7,7 @@ import com.parse.ParseObject;
 import com.parse.PushService;
 
 
+
 public class Quiz extends Application {
     public void onCreate() {
         super.onCreate();
@@ -19,6 +20,6 @@ public class Quiz extends Application {
         testObject.put("foo", "bar");
         testObject.saveInBackground();
 
-        PushService.setDefaultPushCallback(this,MainActivity.class);
+        PushService.setDefaultPushCallback(getApplicationContext(),MainActivity.class);
     }
 }

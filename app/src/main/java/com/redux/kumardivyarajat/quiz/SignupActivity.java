@@ -60,8 +60,8 @@ public class SignupActivity extends ActionBarActivity {
                 if (firstName.isEmpty() || lastName.isEmpty() || username.isEmpty() || email.isEmpty() || password.isEmpty()) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
 
-                    builder.setMessage("Let's have sex on the beach.");
-                    builder.setTitle("SEXY");
+                    builder.setMessage("Please fill all the fields.");
+                    builder.setTitle("OOPS!!");
                     builder.setPositiveButton(android.R.string.ok, null);
 
                     AlertDialog dialog = builder.create();

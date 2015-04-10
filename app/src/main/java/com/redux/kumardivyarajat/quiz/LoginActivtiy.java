@@ -48,7 +48,7 @@ public class LoginActivtiy extends ActionBarActivity {
             }
         });
 
-        muname = (EditText) findViewById(R.id.email);
+        muname = (EditText) findViewById(R.id.uname);
         mpword = (EditText) findViewById(R.id.pword);
 
 
@@ -68,7 +68,7 @@ public class LoginActivtiy extends ActionBarActivity {
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivtiy.this);
 
                     builder.setMessage("Please fill all the fields");
-                    builder.setTitle("SEXY");
+                    builder.setTitle("OOPS!!");
                     builder.setPositiveButton(android.R.string.ok, null);
 
                     AlertDialog dialog = builder.create();
