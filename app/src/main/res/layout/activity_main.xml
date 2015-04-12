@@ -1,11 +1,105 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.redux.kumardivyarajat.quiz.SublistActivity"
+    android:clickable="false"
+    android:backgroundTintMode="add"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:visibility="visible"
+    android:backgroundTint="@color/bright_foreground_disabled_material_dark"
+    android:alpha="1.0"
+    android:animateLayoutChanges="true">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:background="@drawable/quizapp"
+        android:id="@+id/main">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:id="@+id/eng"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/phy"
+            android:layout_alignStart="@+id/phy"
+            android:textStyle="bold"
+            android:layout_weight="0.2"
+            android:background="#ffffa346"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/Base.V7.Theme.AppCompat.Light"
+            android:textIsSelectable="false"
+            android:linksClickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="true"
+            android:enabled="true"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biology"
+            android:id="@+id/bio"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Physics"
+            android:id="@+id/phy"
+            android:textSize="25sp"
+            android:layout_above="@+id/bio"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chemistry"
+            android:id="@+id/chem"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/bio"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biochemistry"
+            android:id="@+id/biochem"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/chem"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
 
 </RelativeLayout>

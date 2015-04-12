@@ -3,8 +3,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/background"
-    >
+    android:background="@drawable/background">
 
     <TextView
         android:layout_width="125dp"
@@ -17,6 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/fname"
         android:layout_toStartOf="@+id/fname" />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
@@ -25,7 +25,8 @@
         android:textColor="#000000"
         android:layout_alignTop="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:textSize="15dp"/>
+        android:textSize="15dp" />
+
     <TextView
         android:layout_width="125dp"
         android:layout_height="40dp"
@@ -36,6 +37,7 @@
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2" />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
@@ -44,7 +46,8 @@
         android:hint="Last Name"
         android:layout_alignTop="@+id/textView3"
         android:layout_alignParentRight="true"
-        android:textSize="15dp"/>
+        android:textSize="15dp" />
+
     <TextView
         android:layout_width="125dp"
         android:layout_height="40dp"
@@ -55,6 +58,7 @@
         android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3" />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
@@ -65,7 +69,8 @@
         android:hint="E-mail"
         android:layout_below="@+id/lname"
         android:layout_alignParentRight="true"
-        android:textSize="15dp"/>
+        android:textSize="15dp" />
+
     <TextView
         android:layout_width="125dp"
         android:layout_height="40dp"
@@ -76,6 +81,7 @@
         android:layout_below="@+id/textView4"
         android:layout_toLeftOf="@+id/uname"
         android:layout_toStartOf="@+id/uname" />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
@@ -84,7 +90,8 @@
         android:hint="Username"
         android:layout_alignTop="@+id/textView5"
         android:layout_alignParentRight="true"
-        android:textSize="15dp"/>
+        android:textSize="15dp" />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="40dp"
@@ -97,6 +104,7 @@
         android:layout_below="@+id/textView5"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
     <TextView
         android:layout_width="125dp"
         android:layout_height="40dp"
@@ -107,6 +115,7 @@
         android:layout_below="@+id/textView5"
         android:layout_toLeftOf="@+id/pword"
         android:layout_toStartOf="@+id/pword" />
+
     <Button
         android:layout_width="190dp"
         android:layout_height="40dp"
@@ -118,6 +127,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <Button
         android:layout_width="175dp"
         android:layout_height="40dp"
@@ -128,11 +138,12 @@
         android:layout_alignTop="@+id/register"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="56dp"
         android:textColor="#000000"
         android:id="@+id/register_error"
         android:layout_below="@+id/register"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true" />
 </RelativeLayout>

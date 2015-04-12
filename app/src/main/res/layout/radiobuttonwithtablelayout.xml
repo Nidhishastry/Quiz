@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Utilities.RabioButtonWithTableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TableRow>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:text="Radio 1" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:text="Radio 3" />
+    </TableRow>
+
+    <TableRow>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:text="Radio 2" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:text="Radio 4" >
+        </RadioButton>
+    </TableRow>
+
+</Utilities.RabioButtonWithTableLayout>

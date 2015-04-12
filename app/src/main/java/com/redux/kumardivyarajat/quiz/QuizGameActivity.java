@@ -1,24 +1,44 @@
 package com.redux.kumardivyarajat.quiz;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
-public class SublistActivity extends ActionBarActivity {
+import java.util.List;
+
+
+public class QuizGameActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sublist);
+        setContentView(R.layout.activity_quiz_game);
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("MyClass");
+        query.findInBackground(new FindCallback<ParseObject>() {
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                  //  objectsWereRetrievedSuccessfully(objects);
+                } else {
+                  //  objectRetrievalFailed();
+                }
+            }
+        });
+
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_sublist, menu);
+        getMenuInflater().inflate(R.menu.menu_quiz_game, menu);
         return true;
     }
 
