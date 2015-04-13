@@ -60,7 +60,16 @@
             android:layout_alignParentStart="true"
             android:layout_centerHorizontal="true"
             android:textStyle="bold"
-            android:layout_weight="0.2" />
+            android:layout_weight="0.2"
+            android:background="#fff1ff9d"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/Base.V7.Theme.AppCompat.Light"
+            android:textIsSelectable="false"
+            android:linksClickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="true"
+            android:enabled="true"
+            android:clickable="true"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -74,7 +83,15 @@
             android:layout_alignParentStart="true"
             android:layout_centerHorizontal="true"
             android:textStyle="bold"
-            android:layout_weight="0.2" />
+            android:layout_weight="0.2"
+            android:background="#ff79fff8"
+            android:gravity="center_vertical|center_horizontal"
+            android:textIsSelectable="false"
+            android:linksClickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="true"
+            android:enabled="true"
+            android:clickable="true"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -86,10 +103,19 @@
             android:layout_below="@+id/bio"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_weight="0.2" />
+            android:layout_weight="0.2"
+            android:background="#ffe99aff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/Base.V7.Theme.AppCompat.Light"
+            android:textIsSelectable="false"
+            android:linksClickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="true"
+            android:enabled="true"
+            android:clickable="true"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Biochemistry"
             android:id="@+id/biochem"
@@ -98,7 +124,16 @@
             android:layout_below="@+id/chem"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_weight="0.2" />
+            android:layout_weight="0.2"
+            android:background="#ffff7377"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/Base.V7.Theme.AppCompat.Light"
+            android:textIsSelectable="false"
+            android:linksClickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="true"
+            android:enabled="true"
+            android:clickable="true"/>
 
     </LinearLayout>
 

@@ -30,14 +30,15 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         Drawable engBackground = findViewById(R.id.eng).getBackground();
         engBackground.setAlpha(50);
 
+        Drawable bioBackground = findViewById(R.id.bio).getBackground();
+        bioBackground.setAlpha(50);
+        Drawable phyBackground = findViewById(R.id.phy).getBackground();
+        phyBackground.setAlpha(50);
+        Drawable chemBackground = findViewById(R.id.chem).getBackground();
+        chemBackground.setAlpha(50);
+        Drawable biochemBackground = findViewById(R.id.biochem).getBackground();
+        biochemBackground.setAlpha(50);
 
-        ActionBar ab = getSupportActionBar();
-        ab.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
-        // Add three tabs to the Action Bar for display
-        ab.addTab(ab.newTab().setText("Tab 1").setTabListener(this));
-        ab.addTab(ab.newTab().setText("Tab 2").setTabListener(this));
-        ab.addTab(ab.newTab().setText("Tab 3").setTabListener(this));
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
@@ -56,7 +57,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         mEng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // mEng.startAnimation(out);
+                 mEng.startAnimation(out);
 
                 Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
                 startActivity(intent);

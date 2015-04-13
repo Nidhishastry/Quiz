@@ -12,10 +12,9 @@
         android:id="@+id/textView2"
         android:textColor="#000000"
         android:textSize="15dp"
-        android:layout_marginTop="69dp"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/fname"
-        android:layout_toStartOf="@+id/fname" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
 
     <EditText
         android:layout_width="200dp"
@@ -34,9 +33,9 @@
         android:textColor="#000000"
         android:id="@+id/textView3"
         android:textSize="15dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_alignTop="@+id/lname"
+        android:layout_toLeftOf="@+id/lname"
+        android:layout_toStartOf="@+id/lname" />
 
     <EditText
         android:layout_width="200dp"
@@ -44,9 +43,10 @@
         android:textColor="#000000"
         android:id="@+id/lname"
         android:hint="Last Name"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignParentRight="true"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
 
     <TextView
         android:layout_width="125dp"
@@ -55,9 +55,9 @@
         android:text="Email"
         android:id="@+id/textView4"
         android:textSize="15dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
 
     <EditText
         android:layout_width="200dp"
@@ -67,9 +67,10 @@
         android:ems="10"
         android:id="@+id/email"
         android:hint="E-mail"
-        android:layout_below="@+id/lname"
-        android:layout_alignParentRight="true"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
 
     <TextView
         android:layout_width="125dp"
@@ -78,9 +79,9 @@
         android:text="Username"
         android:id="@+id/textView5"
         android:textSize="15dp"
-        android:layout_below="@+id/textView4"
-        android:layout_toLeftOf="@+id/uname"
-        android:layout_toStartOf="@+id/uname" />
+        android:layout_alignTop="@+id/uname"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
 
     <EditText
         android:layout_width="200dp"
@@ -88,9 +89,10 @@
         android:textColor="#000000"
         android:id="@+id/uname"
         android:hint="Username"
-        android:layout_alignTop="@+id/textView5"
-        android:layout_alignParentRight="true"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:layout_above="@+id/pword"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
 
     <EditText
         android:layout_width="200dp"
@@ -101,9 +103,9 @@
         android:id="@+id/pword"
         android:hint="Password"
         android:textSize="15dp"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignRight="@+id/bktologin"
+        android:layout_alignEnd="@+id/bktologin" />
 
     <TextView
         android:layout_width="125dp"
@@ -112,9 +114,10 @@
         android:text="Password"
         android:id="@+id/textView6"
         android:textSize="15dp"
-        android:layout_below="@+id/textView5"
+        android:layout_above="@+id/register"
         android:layout_toLeftOf="@+id/pword"
-        android:layout_toStartOf="@+id/pword" />
+        android:layout_toStartOf="@+id/pword"
+        android:layout_marginBottom="33dp" />
 
     <Button
         android:layout_width="190dp"
@@ -123,7 +126,6 @@
         android:text="Register"
         android:id="@+id/register"
         android:textSize="13dp"
-        android:layout_marginBottom="128dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
