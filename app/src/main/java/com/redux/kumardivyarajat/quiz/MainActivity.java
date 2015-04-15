@@ -60,6 +60,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                  mEng.startAnimation(out);
 
                 Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                intent.putExtra("Subject","English");
                 startActivity(intent);
             }
         });
@@ -69,6 +70,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             public void onClick(View v) {
                 mPhy.startAnimation(out);
                 Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                intent.putExtra("Subject","Physics");
                 startActivity(intent);
             }
         });
@@ -78,6 +80,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             public void onClick(View v) {
                 mChem.startAnimation(out);
                 Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                intent.putExtra("Subject","Chemistry");
                 startActivity(intent);
             }
         });
@@ -87,6 +90,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             public void onClick(View v) {
                 mBio.startAnimation(out);
                 Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                intent.putExtra("Subject","Biology");
                 startActivity(intent);
             }
         });
@@ -96,6 +100,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             public void onClick(View v) {
                 mBioChem.startAnimation(out);
                 Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                intent.putExtra("Subject","BioChemistry");
                 startActivity(intent);
             }
         });

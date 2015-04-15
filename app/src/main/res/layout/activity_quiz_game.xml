@@ -6,36 +6,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.redux.kumardivyarajat.quiz.QuizGameActivity">
-
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:alpha="3.0"
-        android:max="100"
-        android:progress="10"
-        android:indeterminate="true" />
+    tools:context="com.redux.kumardivyarajat.quiz.QuizGameActivity"
+    android:background="#ffd1ff5b">
 
     <TextView
         android:layout_width="352dp"
         android:layout_height="144dp"
         android:text="Questions"
         android:id="@+id/questions"
-        android:layout_below="@+id/progressBar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="63dp"
-        android:background="#ffe7ffe4" />
+        android:background="#ffe7ffe4"
+        android:textSize="20sp"
+        android:textColor="#ff47b4ff" />
 
     <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New RadioButton"
         android:id="@+id/optionA"
@@ -47,35 +34,35 @@
         />
 
     <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New RadioButton"
         android:id="@+id/optionB"
-        android:layout_alignBottom="@+id/optionA"
-        android:layout_alignRight="@+id/questions"
-        android:layout_alignEnd="@+id/questions"
-        android:checked="false" />
+        android:checked="false"
+        android:layout_alignTop="@+id/optionA"
+        android:layout_alignLeft="@+id/optionD"
+        android:layout_alignStart="@+id/optionD" />
 
     <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New RadioButton"
         android:id="@+id/optionC"
+        android:layout_marginTop="83dp"
+        android:checked="false"
         android:layout_below="@+id/optionA"
-        android:layout_alignRight="@+id/optionA"
-        android:layout_alignEnd="@+id/optionA"
-        android:layout_marginTop="46dp"
-        android:checked="false" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/optionD"
-        android:layout_alignBottom="@+id/optionC"
-        android:layout_alignLeft="@+id/optionB"
-        android:layout_alignStart="@+id/optionB"
         android:checked="false"
-        android:text="New RadioButton" />
+        android:text="New RadioButton"
+        android:layout_alignTop="@+id/optionC"
+        android:layout_toRightOf="@+id/optionC"
+        android:layout_toEndOf="@+id/optionC" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -83,8 +70,7 @@
         android:layout_height="wrap_content"
         android:text="Submit Answer"
         android:id="@+id/quiz_game_submit_button"
-        android:layout_below="@+id/optionC"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
