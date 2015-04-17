@@ -1,6 +1,7 @@
 package com.redux.kumardivyarajat.quiz;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
@@ -22,6 +23,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         setContentView(R.layout.activity_main);
 
         Drawable mainActivityBackground = findViewById(R.id.main).getBackground();
@@ -59,7 +62,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             public void onClick(View v) {
                  mEng.startAnimation(out);
 
-                Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                Intent intent = new Intent(MainActivity.this , Question1Activity.class);
                 intent.putExtra("Subject","English");
                 startActivity(intent);
             }
@@ -69,7 +72,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             @Override
             public void onClick(View v) {
                 mPhy.startAnimation(out);
-                Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                Intent intent = new Intent(MainActivity.this , Question1Activity.class);
                 intent.putExtra("Subject","Physics");
                 startActivity(intent);
             }
@@ -79,7 +82,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             @Override
             public void onClick(View v) {
                 mChem.startAnimation(out);
-                Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                Intent intent = new Intent(MainActivity.this , Question1Activity.class);
                 intent.putExtra("Subject","Chemistry");
                 startActivity(intent);
             }
@@ -89,7 +92,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             @Override
             public void onClick(View v) {
                 mBio.startAnimation(out);
-                Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
+                Intent intent = new Intent(MainActivity.this , Question1Activity.class);
                 intent.putExtra("Subject","Biology");
                 startActivity(intent);
             }
@@ -99,8 +102,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             @Override
             public void onClick(View v) {
                 mBioChem.startAnimation(out);
-                Intent intent = new Intent(MainActivity.this , QuizGameActivity.class);
-                intent.putExtra("Subject","BioChemistry");
+                Intent intent = new Intent(MainActivity.this , Question1Activity.class);
+                intent.putExtra("Subject","General");
                 startActivity(intent);
             }
         });

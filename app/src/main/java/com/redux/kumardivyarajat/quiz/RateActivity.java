@@ -1,7 +1,6 @@
 package com.redux.kumardivyarajat.quiz;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,19 +9,21 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class ResetPasswordActivity extends ActionBarActivity {
+public class RateActivity extends ActionBarActivity {
+
+    Button msubmitButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setContentView(R.layout.activity_rate);
 
-        setContentView(R.layout.activity_reset_password);
-        Button mBackToLoginButton = (Button)findViewById(R.id.bktolog);
-        mBackToLoginButton.setOnClickListener(new View.OnClickListener() {
+        msubmitButton = (Button)findViewById(R.id.rate_submit);
+        msubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResetPasswordActivity.this , LoginActivtiy.class);
+                Intent intent = new Intent(RateActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
@@ -31,10 +32,11 @@ public class ResetPasswordActivity extends ActionBarActivity {
     }
 
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_reset_password, menu);
+        getMenuInflater().inflate(R.menu.menu_rate, menu);
         return true;
     }
 

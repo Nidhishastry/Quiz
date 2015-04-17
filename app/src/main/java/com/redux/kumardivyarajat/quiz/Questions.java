@@ -10,13 +10,13 @@ public class Questions  {
     private String OptionB;
     private String OptionC;
     private String OptionD;
-    private String CorrectAnswer;
+    private int CorrectAnswer;
 
     public Questions () {
 
     }
 
-    public Questions(String question, String optionA, String optionB, String optionC, String optionD, String correctAnswer) {
+    public Questions(String question, String optionA, String optionB, String optionC, String optionD, int correctAnswer) {
         Question = question;
         OptionA = optionA;
         OptionB = optionB;
@@ -65,11 +65,11 @@ public class Questions  {
         OptionD = optionD;
     }
 
-    public String getCorrectAnswer() {
+    public int getCorrectAnswer() {
         return CorrectAnswer;
     }
 
-    public void setCorrectAnswer(String correctAnswer) {
+    public void setCorrectAnswer(int correctAnswer) {
         CorrectAnswer = correctAnswer;
     }
 }

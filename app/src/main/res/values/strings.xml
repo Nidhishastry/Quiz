@@ -10,4 +10,10 @@
     <string name="title_activity_sublist">Subjectlist</string>
     <string name="title_activity_quiz_game">Game</string>
     <string name="title_activity_score">Score</string>
+    <string name="title_activity_question1">First Question</string>
+    <string name="title_activity_question2">Second Question</string>
+    <string name="title_activity_question3">Third Question</string>
+    <string name="title_activity_question4">Fourth Activity</string>
+    <string name="title_activity_question5_acitivity">Fifith Question</string>
+    <string name="title_activity_rate">Rate</string>
 </resources>

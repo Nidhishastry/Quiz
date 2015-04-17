@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relative_layout5"
     tools:context="com.redux.kumardivyarajat.quiz.QuizGameActivity"
     android:background="#80ffcede">
 
@@ -17,27 +18,27 @@
     <TextView
         android:layout_width="340dp"
         android:layout_height="144dp"
-        android:id="@+id/question3"
+        android:id="@+id/question5"
         android:layout_marginTop="63dp"
         android:textSize="25sp"
-        android:textColor="#ff47b4ff"
+        android:textColor="#ff000000"
         android:textStyle="italic"
-        android:layout_toLeftOf="@+id/chronometer_3" />
+        android:gravity="center_vertical|center_horizontal" />
 
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/answers_radiogroup"
+        android:id="@+id/answers_radiogroup_5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/question3"
-        android:layout_above="@+id/submit_3">
+        android:layout_below="@+id/question5"
+        android:layout_above="@+id/submit_5">
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/optionA"
+            android:id="@+id/optionA_5"
             android:textSize="20dp"
             android:layout_weight="1"
 
@@ -48,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
-            android:id="@+id/optionB"
+            android:id="@+id/optionB_5"
             android:layout_weight="1"
 
             android:textSize="20dp"
@@ -58,7 +59,7 @@
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/optionC"
+            android:id="@+id/optionC_5"
             android:textSize="20dp"
             android:layout_weight="1"
 
@@ -70,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:id="@+id/optionD"
+            android:id="@+id/optionD_5"
             android:layout_weight="1"
 
             android:textSize="20dp"
@@ -79,22 +80,27 @@
 
     </RadioGroup>
 
-    <Chronometer
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chronometer_3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="20sp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:id="@+id/submit_3"
+        android:id="@+id/submit_5"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="50dp"
+        android:textColor="#ff47b4ff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer5"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal" />
 
 </RelativeLayout>
